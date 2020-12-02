@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/bref-demo-symfony/dev/1606907679860-2020-12-02T11:14:39.860Z/bref-demo-symfony.zip"
+          "S3Key": "serverless/bref-demo-symfony/dev/1606909417837-2020-12-02T11:43:37.837Z/bref-demo-symfony.zip"
         },
         "FunctionName": "bref-demo-symfony-dev-website",
         "Handler": "public/index.php",
@@ -187,14 +187,14 @@
         "WebsiteLogGroup"
       ]
     },
-    "WebsiteLambdaVersion8WnhTnHA4BaHkyGhbhc6SabXBdpd4JfDJE9jVO8Pgs": {
+    "WebsiteLambdaVersiona4xtnU181LcofMEQtmguP4Bjkvubg4GKeCSaP4aMT2c": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "WebsiteLambdaFunction"
         },
-        "CodeSha256": "+WLP/m6VmXOjj8hEEH3OQ45ghT0NYycJUU+ObiHcGzE="
+        "CodeSha256": "AL7l83OI631c1HAuP3DzJ1H0BRc22l0/84143cvCjRI="
       }
     },
     "HttpApi": {
@@ -302,7 +302,7 @@
     "WebsiteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "WebsiteLambdaVersion8WnhTnHA4BaHkyGhbhc6SabXBdpd4JfDJE9jVO8Pgs"
+        "Ref": "WebsiteLambdaVersiona4xtnU181LcofMEQtmguP4Bjkvubg4GKeCSaP4aMT2c"
       }
     },
     "HttpApiUrl": {
