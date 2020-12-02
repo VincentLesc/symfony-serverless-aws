@@ -1,0 +1,5 @@
+framework:
+    assets:
+        base_url:
+            - '%env(PROD_ASSET_URL)%'
+        json_manifest_path: '%env(PROD_ASSET_URL)%/manifest.json'
