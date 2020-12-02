@@ -9,6 +9,7 @@ provider:
 
 plugins:
   - ./vendor/bref/bref
+  - serverless-prune-versions
 
 package:
   exclude:
@@ -25,3 +26,8 @@ functions:
       - ${bref:layer.php-74-fpm}
     events:
       - httpApi: '*'
+
+custom:
+  prune:
+    automatic: true
+    number: 2
