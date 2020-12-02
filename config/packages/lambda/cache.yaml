@@ -1,5 +1,7 @@
 framework:
     cache:
+        system: cache.adapter.filesystem # instead of cache.adapter.system
+        app: cache.adapter.filesystem
         directory: '/tmp/cache'
         # Unique name of your app: used to compute stable namespaces for cache keys.
         #prefix_seed: your_vendor_name/app_name
