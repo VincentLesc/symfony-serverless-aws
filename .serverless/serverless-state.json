@@ -177,7 +177,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/bref-demo-symfony/dev/1606909417837-2020-12-02T11:43:37.837Z/bref-demo-symfony.zip"
+                "S3Key": "serverless/bref-demo-symfony/dev/1606910508834-2020-12-02T12:01:48.834Z/bref-demo-symfony.zip"
               },
               "FunctionName": "bref-demo-symfony-dev-website",
               "Handler": "public/index.php",
@@ -203,14 +203,14 @@
               "WebsiteLogGroup"
             ]
           },
-          "WebsiteLambdaVersiona4xtnU181LcofMEQtmguP4Bjkvubg4GKeCSaP4aMT2c": {
+          "WebsiteLambdaVersionPaK5WvHh48TCNx5hNZ8Ci0rnTc8YnUaz0ObQP6MzpI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "WebsiteLambdaFunction"
               },
-              "CodeSha256": "AL7l83OI631c1HAuP3DzJ1H0BRc22l0/84143cvCjRI="
+              "CodeSha256": "p0TrvRPdZPZqox6dazwqD2Wf1hLLFg7pU7YM1w4VAm0="
             }
           },
           "HttpApi": {
@@ -315,7 +315,7 @@
           "WebsiteLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "WebsiteLambdaVersiona4xtnU181LcofMEQtmguP4Bjkvubg4GKeCSaP4aMT2c"
+              "Ref": "WebsiteLambdaVersionPaK5WvHh48TCNx5hNZ8Ci0rnTc8YnUaz0ObQP6MzpI"
             }
           },
           "HttpApiUrl": {
@@ -426,8 +426,15 @@
       },
       "vpc": {}
     },
+    "custom": {
+      "prune": {
+        "automatic": true,
+        "number": 2
+      }
+    },
     "plugins": [
-      "./vendor/bref/bref"
+      "./vendor/bref/bref",
+      "serverless-prune-versions"
     ],
     "pluginsData": {},
     "functions": {
@@ -448,7 +455,7 @@
         "memory": 1024,
         "runtime": "provided.al2",
         "vpc": {},
-        "versionLogicalId": "WebsiteLambdaVersiona4xtnU181LcofMEQtmguP4Bjkvubg4GKeCSaP4aMT2c"
+        "versionLogicalId": "WebsiteLambdaVersionPaK5WvHh48TCNx5hNZ8Ci0rnTc8YnUaz0ObQP6MzpI"
       }
     },
     "configValidationMode": "warn",
@@ -473,17 +480,20 @@
           "!var/cache/lambda/**"
         ],
         "artifact": "/home/vincent/Bureau/symfony_serverless/.serverless/bref-demo-symfony.zip",
-        "artifactDirectoryName": "serverless/bref-demo-symfony/dev/1606909417837-2020-12-02T11:43:37.837Z"
+        "artifactDirectoryName": "serverless/bref-demo-symfony/dev/1606910508834-2020-12-02T12:01:48.834Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
+      },
+      "custom": {
+        "$ref": "$[\"service\"][\"custom\"]"
       }
     },
     "isDashboardMonitoringPreconfigured": false,
     "artifact": "/home/vincent/Bureau/symfony_serverless/.serverless/bref-demo-symfony.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/bref-demo-symfony/dev/1606909417837-2020-12-02T11:43:37.837Z",
+    "artifactDirectoryName": "serverless/bref-demo-symfony/dev/1606910508834-2020-12-02T12:01:48.834Z",
     "artifact": "bref-demo-symfony.zip"
   }
 }
