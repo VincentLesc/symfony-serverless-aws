@@ -1,5 +1,12 @@
+@import "common/navbar.css";
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+.bg-black {
+    background-color: #121212;
+}
+

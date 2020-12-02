@@ -17,6 +17,7 @@ package:
     - tests/**
     - var/**
     - '!var/cache/${self:provider.environment.APP_ENV}/**'
+    - public/build/**
 
 functions:
   website:
@@ -27,7 +28,7 @@ functions:
     events:
       - httpApi: '*'
 
-custom:
-  prune:
-    automatic: true
-    number: 2
+#custom:
+#  prune:
+#    automatic: true
+#    number: 2
