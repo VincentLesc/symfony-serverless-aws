@@ -15,6 +15,7 @@ package:
     - node_modules/**
     - tests/**
     - var/**
+    - '!var/cache/${self:provider.environment.APP_ENV}/**'
 
 functions:
   website:
