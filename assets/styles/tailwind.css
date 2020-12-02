@@ -1,22 +1,12 @@
+@import "common/navbar.css";
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
 
-#nav-profile {
-    opacity: 0;
-    transition: ease-out, transform 250ms;
+.bg-black {
+    background-color: #121212;
 }
 
-#nav-profile-btn:hover + #nav-profile {
-    opacity: 100;
-    transform: scale(1.1);
-    transition: ease-in, transform 250ms;
-}
-
-#nav-profile:hover {
-    opacity: 100;
-    transform: scale(1.1);
-    transition: ease-in, transform 250ms;
-}
